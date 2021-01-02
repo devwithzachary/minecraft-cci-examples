@@ -4,4 +4,6 @@ This repo is to hold a number of different examples for the Minecraft Mode [Cont
 
 Offical Documentation for the Mod can be found [here](https://content-creator-integration.readthedocs.io/en/latest/) but its lacking examples of how to setup the different json config files, hense this repo.
 
+Any examples you would like to add are very welcome!
+
 If you find these example useful please do consider checking out my twitch!
