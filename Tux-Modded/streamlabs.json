@@ -1,0 +1,1173 @@
+{
+  "configs": [
+    {
+      "types": {
+        "bits": [
+          {
+            "name": "Bit Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 0,
+                "title": "$user",
+                "subtitle": "Gave $amount Bits!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "10 Bits",
+            "conditions": [
+              {
+                "min": 10.0,
+                "max": 49.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:silverfish ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }, {
+                "command": "/execute at @a run summon minecraft:cow ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          } ,
+          {
+            "name": "50 Bits",
+            "conditions": [
+              {
+                "min": 50.0,
+                "max": 99.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:silverfish ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }, {
+                "command": "/execute at @a run summon minecraft:cow ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }, {
+                "command": "/execute at @a run summon minecraft:zombie ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }, {
+                "command": "/execute at @a run summon minecraft:chicken ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "100 Bits",
+            "conditions": [
+              {
+                "min": 100.0,
+                "max": 199.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:silverfish ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:cow ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:zombie ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "200 Bits",
+            "conditions": [
+              {
+                "min": 200.0,
+                "max": 299.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:zombie ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "300 Bits",
+            "conditions": [
+              {
+                "min": 300.0,
+                "max": 399.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "400 Bits",
+            "conditions": [
+              {
+                "min": 400.0,
+                "max": 499.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "500 Bits",
+            "conditions": [
+              {
+                "min": 500.0,
+                "max": 749.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "750 Bits",
+            "conditions": [
+              {
+                "min": 750.0,
+                "max": 999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "1000 Bits",
+            "conditions": [
+              {
+                "min": 1000.0,
+                "max": 1999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "2000 Bits",
+            "conditions": [
+              {
+                "min": 2000.0,
+                "max": 4999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "5000 Bits",
+            "conditions": [
+              {
+                "min": 5000.0,
+                "max": 9999.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 25
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 75
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "10000 Bits",
+            "conditions": [
+              {
+                "min": 10000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 25
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 75
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "subMysteryGift": [
+          {
+            "name": "Sub Gift Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "title": "Gifted Subs",
+                "subtitle": "$name gifted $amount subs",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Gift Subs",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 1000.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/give @a minecraft:iron_ingot 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:gold_ingot 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:diamond 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:redstone 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:lapis_lazuli 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:emerald 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:netherite_scrap 1",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:coal 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:dirt 4",
+                "type": "command",
+                "weight": 20
+              },
+              {
+                "command": "/give @a minecraft:cobblestone 4",
+                "type": "command",
+                "weight": 20
+              }
+            ]
+          }
+        ],
+        "subscription": [
+          {
+            "name": "Sub Notification ",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 0,
+                "title": "$user subbed",
+                "subtitle": "$amount months!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Sub",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give @a minecraft:iron_ingot 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:gold_ingot 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:diamond 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:redstone 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:lapis_lazuli 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:emerald 4",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:netherite_scrap 1",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/give @a minecraft:coal 4",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:dirt 4",
+                "type": "command",
+                "weight": 20
+              },
+              {
+                "command": "/give @a minecraft:cobblestone 4",
+                "type": "command",
+                "weight": 20
+              }
+            ],
+            "triggersFromAnyConditionMet": true,
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "follow": [
+          {
+            "name": "Follow Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 0,
+                "title": "Follower Alert",
+                "subtitle": "$user followed!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Random Food",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give @a minecraft:melon",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cookie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_cod 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_cod 1 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_chicken",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_beef",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_porkchop",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_rabbit",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:bread",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:carrot",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:baked_potato",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:pumpkin_pie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_mutton",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:beetroot_soup",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:mushroom_stew",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:golden_apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:golden_apple 1 1",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Sound",
+            "conditions": [],
+            "outcomes": []
+          }
+        ],
+        "host": [
+          {
+            "name": "Host Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user is now hosting",
+                "subtitle": "$viewers viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 20
+          },
+          {
+            "name": "Random Food",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/give @a minecraft:melon",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cookie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_cod 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_cod 1 1",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_chicken",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_beef",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_porkchop",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_rabbit",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:bread",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:carrot",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:baked_potato",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:pumpkin_pie",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:cooked_mutton",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:beetroot_soup",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:mushroom_stew",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:golden_apple",
+                "type": "command",
+                "weight": 10
+              },
+              {
+                "command": "/give @a minecraft:golden_apple 1 1",
+                "type": "command",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "raid": [
+          {
+            "name": "Raid Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 2,
+                "title": "$user Raid",
+                "subtitle": "$amount viewers!",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Raid of the viewers",
+            "conditions": [],
+            "outcomes": [
+              {
+                "condition": {
+                  "min": 40.0,
+                  "type": "range"
+                },
+                "outcome": {
+                  "times": "40",
+                  "outcome": {
+                    "command": "/execute at @a run summon minecraft:zombie ~ ~1 ~ {CustomName:\"\\\"$name\\\"\"}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "conditionNotMetOutcome": {
+                  "times": "$amount",
+                  "outcome": {
+                    "command": "/execute at @a run summon minecraft:zombie ~ ~1 ~ {CustomName:\"\\\"$name\\\"\"}",
+                    "type": "command"
+                  },
+                  "type": "repeat"
+                },
+                "type": "conditional"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "resub": [
+          {
+            "name": "Resub Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 0,
+                "title": "$user resubbed",
+                "subtitle": "$amount months!",
+                "type": "toast"
+              }
+            ]
+          }
+        ]
+      },
+      "queue": [
+        "host+subscription+bits",
+        "follow"
+      ],
+      "for": "twitch_account"
+    },
+    {
+      "types": {
+        "donation": [
+          {
+            "name": "Donation Notification",
+            "conditions": [],
+            "outcomes": [
+              {
+                "toastType": 0,
+                "title": "$user donated!",
+                "subtitle": "$formatted_amount",
+                "type": "toast"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true,
+            "playTime": 8
+          },
+          {
+            "name": "$1",
+            "conditions": [
+              {
+                "min": 1.0,
+                "max": 1.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:silverfish ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:cow ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:zombie ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$2",
+            "conditions": [
+              {
+                "min": 2.0,
+                "max": 2.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:zombie ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$3",
+            "conditions": [
+              {
+                "min": 3.0,
+                "max": 3.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$4",
+            "conditions": [
+              {
+                "min": 4.0,
+                "max": 4.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:creeper ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$5",
+            "conditions": [
+              {
+                "min": 5.0,
+                "max": 7.49,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:witch ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:hoglin ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$7.50",
+            "conditions": [
+              {
+                "min": 7.50,
+                "max": 9.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:blaze ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:ghast ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 10
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$10",
+            "conditions": [
+              {
+                "min": 10.00,
+                "max": 19.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              }, {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 30
+              } , {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$20",
+            "conditions": [
+              {
+                "min": 20.00,
+                "max": 49.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ravager ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }, {
+                "command": "/execute at @a run summon minecraft:wither_skeleton ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:vindicator ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 20
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$50",
+            "conditions": [
+              {
+                "min": 50.0,
+                "max": 99.99,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 25
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 75
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "$100",
+            "conditions": [
+              {
+                "min": 100.0,
+                "type": "range"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:ender_dragon ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 25
+              } , {
+                "command": "/execute at @a run summon minecraft:wither ~ ~ ~ {CustomName:\"\\\"$name\\\"\"}",
+                "type": "command",
+                "weight": 75
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ]
+      }
+    }
+  ],
+  "init": [],
+  "type": "streamlabs"
+}

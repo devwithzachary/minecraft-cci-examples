@@ -1,0 +1,187 @@
+{
+  "configs": [
+    {
+      "types": {
+        "message": [
+          {
+            "name": "Twitch Chat",
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"[Twitch]\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\" \",\"bold\":true},{\"text\":\"$display-name: $message\"}]",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Channel Point Text",
+            "conditions": [
+              {
+                "variableName": "custom-reward-id",
+                "type": "variableExists"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"[Channel Points]\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\" \",\"bold\":true},{\"text\":\"$display-name used a channel point redemption!\"}]",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Random Friendly Mob",
+            "conditions": [
+              {
+                "variableName": "custom-reward-id",
+                "variableResult": "",
+                "type": "variableCheck"
+              }
+            ],
+            "outcomes": [
+              {
+                "command": "/execute at @a run summon minecraft:cow ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/execute at @a run summon minecraft:sheep ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/execute at @a run summon minecraft:chicken ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/execute at @a run summon minecraft:slime ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 15
+              },
+              {
+                "command": "/execute at @a run summon minecraft:pig ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/execute at @a run summon minecraft:villager ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 5
+              },
+              {
+                "command": "/execute at @a run summon minecraft:wolf ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 15
+              },
+              {
+                "command": "/execute at @a run summon minecraft:bee ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 15
+              },
+              {
+                "command": "/execute at @a run summon minecraft:llama ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"} ",
+                "type": "command",
+                "weight": 15
+              },
+              {
+                "command": "/execute at @a run summon minecraft:rabbit ~ ~ ~ {CustomName:\"\\\"$display-name\\\"\"}",
+                "type": "command",
+                "weight": 15
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "ChickenHorde",
+            "conditions": [
+              {
+                "variableName": "custom-reward-id",
+                "variableResult": "",
+                "type": "variableCheck"
+              }
+            ],
+            "outcomes": [
+              {
+                "sound": "minecraft:entity.illusion_illager.cast_spell",
+                "target": "@playerName",
+                "volume": 1000.0,
+                "pitch": 0.1,
+                "type": "sound"
+              },
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"[Channel Points]\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\" \",\"bold\":true},{\"text\":\"ITS RAINING CHICKENS\"}]",
+                "type": "command"
+              },
+              {
+                "command": "/execute at @a run summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"},{id:chicken,CustomName:\"\\\"$display-name\\\"\"}]}",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Help or Hinder",
+            "conditions": [
+              {
+                "variableName": "custom-reward-id",
+                "variableResult": "",
+                "type": "variableCheck"
+              }
+            ],
+            "outcomes": [
+              {
+                "target": "@a",
+                "amount": "5",
+                "type": "health",
+                "weight": 1
+              },
+              {
+                "target": "@a",
+                "amount": "-5",
+                "type": "health",
+                "weight": 1
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          },
+          {
+            "name": "Item Drop",
+            "conditions": [
+              {
+                "variableName": "custom-reward-id",
+                "variableResult": "b4769633-fd0f-41dc-8ea7-724ac8200c18",
+                "type": "variableCheck"
+              }
+            ],
+            "outcomes": [
+              {
+                "keyName": "key.drop",
+                "type": "keyPress"
+              },
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"[Channel Points]\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\" \",\"bold\":true},{\"text\":\"DROP IT LIKE ITS HOT\"}]",
+                "type": "command"
+              }
+            ],
+            "allowsOtherEventsToTrigger": true
+          }
+        ],
+        "action": [
+          {
+            "conditions": [],
+            "outcomes": [
+              {
+                "command": "/tellraw $playerName [\"\",{\"text\":\"[Twitch]\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\" \",\"bold\":true},{\"text\":\"*\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"$display-name $message\",\"color\":\"gold\"}]",
+                "type": "command"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "init": [],
+  "type": "chat"
+}
